@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dicționar</title>
+	<!-- Bootstrap: CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+	<div class="px-4 py-5 my-5 text-center">
+	    <img class="d-block mx-auto mb-4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Accessories-dictionary.svg/1200px-Accessories-dictionary.svg.png" alt="" width="172">
+	    <h1 class="display-5 fw-bold">Dicționar</h1>
+	    <div class="col-lg-6 mx-auto">
+	      <p class="lead mb-4">Completează câmpul gol cu un cuvânt și adaugă-l în dicționar.</p>
+	      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+	        <div class="input-group mb-3">
+			  <input type="text" class="form-control" placeholder="Cuvântul dumneavoastră..." aria-label="inputForWord" aria-describedby="button-addon" id="insertedWord">
+			  <button class="btn btn-outline-secondary" type="button" id="button-add" onclick="addToList()">Adaugă cuvânt</button>
+			</div>
+	      </div>
+	      <p class="lead mb-4">Verifică pentru un cuvânt dat dacă există deja în dicționar.</p>
+	     	<div class="input-group mb-3">
+			  <input type="text" class="form-control" placeholder="Cuvântul dumneavoastră..." aria-label="Recipient's username" aria-describedby="button-addon" id="insertedWordForSearch">
+			  <button class="btn btn-outline-secondary" type="button" id="button-search" onclick="searchInList()">Caută cuvânt</button>
+			</div>
+	      <p id="message"></p>
+		  <div id="output">
+		  </div>
+	    </div>
+  	</div>
+  	<!-- My JavaScript file -->
+	<script src="js.js"></script>
+	<!-- Bootstrap: JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<!-- JavaScript: jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+</html>
